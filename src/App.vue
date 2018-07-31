@@ -34,8 +34,8 @@
 import loadImage from 'blueimp-load-image'
 import axios from 'axios'
 
-const projectId = "77dbe97a-c214-425a-a7d6-530e71a0f488";
-const predictionKey = "07a7ecde876144058df5090ef0e2b04a";
+const projectId = "{{ProjectID}}";
+const predictionKey = "{{PredictionKey}}";
 const postURL = "https://southcentralus.api.cognitive.microsoft.com/customvision/v2.0/Prediction/"+projectId+"/image";
 const probabilityLine = 0.15; //確信度閾値
 

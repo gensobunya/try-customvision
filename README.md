@@ -1,10 +1,4 @@
-#  Custom Visionとは？
-
-Custom Vision Service とは
-https://docs.microsoft.com/ja-jp/azure/cognitive-services/custom-vision-service/home
->Custom Vision Service は、カスタム画像分類子の構築を支援する Microsoft Cognitive Services です。 画像の分類子を簡単に素早く構築、デプロイし、その性能を向上させることができます。 Custom Vision Service には、画像をアップロードして分類子をトレーニングするための REST API や Web インターフェイスが用意されています。
-
-ざっくりいうと、画像認識のためのロジックは全部Microsoftがやってくれるので、ユーザーは学習データの投入・タグ付けをやるだけでAPI経由で推論結果を得られるというサービスです。
+#  Custom Vision Demo
 サービスイン当初は分類器のみでしたが、5/7のアップデートで物体検出（特定部分の座標取得）ができるようになりました。仕事で軽くプロトタイプを作ってみたところ、そこそこ使えそうな精度になったのでプライベート向けの題材で学習して公開してみることにしました。
 
 # 東方Projectのキャラ判定機を作ろう

@@ -1,7 +1,7 @@
-#  Custom Vision Demo
+# Custom Vision Demo
 サービスイン当初は分類器のみでしたが、5/7のアップデートで物体検出（特定部分の座標取得）ができるようになりました。仕事で軽くプロトタイプを作ってみたところ、そこそこ使えそうな精度になったのでプライベート向けの題材で学習して公開してみることにしました。
 
-# 東方Projectのキャラ判定機を作ろう
+## 東方Projectのキャラ判定機を作ろう
 
 物体検出の題材として、学習データの分量を用意できることが必須かつ「分類することの意味」にもこだわってみたかったので東方キャラを題材に選んでみました。学習材料は自宅にある薄い本＋公式書籍＋αとなっております。
 作業を簡略化するため、下記の条件に当てはまる箇所を撮影して学習データを用意します。
@@ -13,16 +13,20 @@
 ## 1.学習データを準備
 
 1. ログイン後、規約に同意してプロジェクト作成を選択すると、下のような画像アップロード画面に移動します。
-![001.JPG](https://qiita-image-store.s3.amazonaws.com/0/129156/a4b1a96d-bf2b-698e-1ed9-c3d1be7cbae4.jpeg)
 
-2. 学習データ（薄い本）を用意して１枚づつ裏表紙を撮影していきます。
-![DSC_1076.JPG](https://qiita-image-store.s3.amazonaws.com/0/129156/9864e48e-0022-05ac-482f-dc36dbdf6d7b.jpeg)
+    ![001.JPG](https://qiita-image-store.s3.amazonaws.com/0/129156/a4b1a96d-bf2b-698e-1ed9-c3d1be7cbae4.jpeg)
 
-3. アップロードします
-![002.JPG](https://qiita-image-store.s3.amazonaws.com/0/129156/0158b2ab-670e-2416-3418-f390d37eb638.jpeg)
+1. 学習データ（薄い本）を用意して１枚づつ裏表紙を撮影していきます。
 
-4. ドラッグ＆ドロップでエリア選択をして、タグ付けします
-![003.JPG](https://qiita-image-store.s3.amazonaws.com/0/129156/60bad938-7746-cef6-5de3-a25a50dabc17.jpeg)
+    ![DSC_1076.JPG](https://qiita-image-store.s3.amazonaws.com/0/129156/9864e48e-0022-05ac-482f-dc36dbdf6d7b.jpeg)
+
+1. アップロードします
+
+    ![002.JPG](https://qiita-image-store.s3.amazonaws.com/0/129156/0158b2ab-670e-2416-3418-f390d37eb638.jpeg)
+
+1. ドラッグ＆ドロップでエリア選択をして、タグ付けします
+
+    ![003.JPG](https://qiita-image-store.s3.amazonaws.com/0/129156/60bad938-7746-cef6-5de3-a25a50dabc17.jpeg)
 
 基本的にすべてマニュアル作業となりますが、編集画面で物体検出を自動でやってくれたりして結構スマートです。点線は自動検出部分。
 ![004.JPG](https://qiita-image-store.s3.amazonaws.com/0/129156/955dc919-f797-b0f8-d994-1d0bfbf0e282.jpeg)
@@ -76,7 +80,6 @@ APIで結果を得ることもできるのですが、まずは画面上のQuick
 
 霊夢は正しく検出できました！魔理沙は…がんばりましょう。
 
-
 ## 3.学習内容を改善する
 
 まだまだ使いものにならないのでもうちょっとマシな学習内容を目指します。
@@ -113,7 +116,6 @@ APIで結果を得ることもできるのですが、まずは画面上のQuick
 - 茨木華扇18
 - 霧雨魔理沙46
 - 魂魄妖夢18
-
 
 ![image.png](https://qiita-image-store.s3.amazonaws.com/0/129156/f2d656b0-2ac8-a894-053f-d8aa61837ca5.png)
 

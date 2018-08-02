@@ -136,7 +136,15 @@ APIを用いてWEBアプリ化します。PredictionURLをクリックして、�
 Vue.jsとAxiosを使って適当に実装します。公開するときはAPIキーを隠すべきですがとりあえずローカルで動かしたいだけなので気にせず直接書きます。
 APIがJSON形式で検出したエリアを返してくるので、確信度でフィルタした後に画像にオーバーレイしてループしてボックス表示します。
 
-もし流用する場合は`src/assets/App.vue`の{ProjectID},{PredictionID}を適当に置換して下さい。
-
 Materializeを使って適当に装飾して、このように表示されます。
 ![image.png](https://qiita-image-store.s3.amazonaws.com/0/129156/6274e92e-8688-2281-f0cf-691d707145a0.png)
+
+## 自分のモデルを利用するには
+
+.envで下記の環境変数を指定してください。
+
+```
+VUE_APP_PROJECT_ID={{project_id}}
+VUE_APP_PREDICTION_KEY={{prediction_key}}
+VUE_APP_API_ENDPOINT="https://southcentralus.api.cognitive.microsoft.com/customvision/v2.0/Prediction/"
+```

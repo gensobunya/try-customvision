@@ -33,10 +33,11 @@
 <script>
 import loadImage from 'blueimp-load-image'
 import axios from 'axios'
+import dotenv from 'dotenv'
 
-const projectId = "{{ProjectID}}";
-const predictionKey = "{{PredictionKey}}";
-const postURL = "https://southcentralus.api.cognitive.microsoft.com/customvision/v2.0/Prediction/"+projectId+"/image";
+const projectId = process.env.VUE_APP_PROJECT_ID;
+const predictionKey = process.env.VUE_APP_PREDICTION_KEY;
+const postURL = process.env.VUE_APP_API_ENDPOINT+projectId+"/image";
 const probabilityLine = 0.15; //確信度閾値
 
 
